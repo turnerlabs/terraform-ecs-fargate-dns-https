@@ -7,6 +7,8 @@ This will give you a running endpoint with the following format:
 https://${environment}.${app}.${domain}
 ```
 
+![diagram](diagram.png)
+
 Note that this assumes that the route53 zone for the domain is in the same account and you have access to create records.
 
 The templates are designed to be customized.  The optional components can be removed by simply deleting the `.tf` file.
