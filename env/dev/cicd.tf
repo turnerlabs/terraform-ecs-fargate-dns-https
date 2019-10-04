@@ -79,4 +79,3 @@ output "cicd_keys" {
 output "docker_registry" {
   value = data.aws_ecr_repository.ecr.repository_url
 }
-

@@ -56,4 +56,3 @@ resource "aws_appautoscaling_scheduled_action" "app_autoscale_time_down" {
     max_capacity = var.scale_down_max_capacity
   }
 }
-

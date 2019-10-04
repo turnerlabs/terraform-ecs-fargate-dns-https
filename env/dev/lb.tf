@@ -6,7 +6,7 @@
 # Whether the application is available on the public internet,
 # also will determine which subnets will be used (public or private)
 variable "internal" {
-  default = "true"
+  default = true
 }
 
 # The amount time for Elastic Load Balancing to wait before changing the state of a deregistering target from draining to unused
@@ -131,11 +131,9 @@ resource "aws_s3_bucket_policy" "lb_access_logs" {
   ]
 }
 POLICY
-
 }
 
 # The load balancer DNS name
 output "lb_dns" {
   value = aws_alb.main.dns_name
 }
-
