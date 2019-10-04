@@ -117,4 +117,3 @@ resource "aws_appautoscaling_policy" "app_down" {
     }
   }
 }
-
